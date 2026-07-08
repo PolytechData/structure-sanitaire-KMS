@@ -1,7 +1,6 @@
+pip
 streamlit
+streamlit-folium
 geopandas
 folium
-streamlit-folium
 pandas
-json
-pip
