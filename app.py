@@ -7,7 +7,7 @@ import json
 # --- CONFIGURATION DE LA PAGE STREAMLIT ---
 st.set_page_config(
     page_title="SIG KMS",
-    page_icon="Logo.png",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded")
 
@@ -199,8 +199,6 @@ with col_infos:
         inondables_count = len(gdf_sanitaires_filtered[gdf_sanitaires_filtered['Inondable'] == 'Oui'])
         
         st.markdown(f"""
-            <p style="color:#7f8c8d; font-size:13px; font-style:italic;">Cliquez sur un polygone de quartier pour charger ses indicateurs démographiques précis.</p>
-            <br>
             <div class="metric-box sanitaire">
                 <div class="metric-title">🏥 Structures affichées</div>
                 <div class="metric-value">{total_structures}</div>
