@@ -160,7 +160,7 @@ with col_carte:
     output = st_folium(map_object, width="100%", height=650, returned_objects=["last_active_feature"])
 
 with col_infos:
-    st.markdown('<p class="main-title" style="font-size:18px;">📊 Inspection</p>', unsafe_allow_html=True)
+    st.markdown('<p class="main-title" style="font-size:18px;">Inspection</p>', unsafe_allow_html=True)
     
     # Détection du clic sur l'objet de la carte
     active_feature = output.get("last_active_feature")
